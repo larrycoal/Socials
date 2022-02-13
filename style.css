@@ -266,6 +266,10 @@ footer .disclaimer {
     display: flex;
     gap: 1rem;
   }
+  .layer_two .right,
+  .layer_three .right {
+    width: 100%;
+  }
   .layer_two .container {
     flex-direction: column;
   }
