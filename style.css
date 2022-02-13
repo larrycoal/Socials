@@ -9,12 +9,26 @@ body {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+  color: #636974;
+}
 nav {
   display: flex;
   padding: 1rem;
   align-items: center;
   width: 80%;
   margin: 0 auto;
+}
+.hide {
+  display: none;
+}
+.navigation_menu-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: #636974;
 }
 header {
   box-shadow: 0px 3px 6px #00000008;
@@ -99,7 +113,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-right: 3rem;
 }
 .container .right p {
   line-height: 25px;
@@ -116,6 +129,7 @@ button {
   padding: 1rem;
   margin-right: 1rem;
   background-color: #fe0a74;
+  cursor: pointer;
 }
 .layer_three {
   padding: 3rem 0;
@@ -125,7 +139,7 @@ button {
 }
 .description_section h2 {
   text-align: center;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 .description_section .container {
   position: relative;
@@ -143,63 +157,75 @@ button {
   margin-top: 2rem;
   z-index: 2;
 }
-.testimonial{
-    padding: 3rem 0;
-    width: 80%;
-    margin: 0 auto;
+.testimonial {
+  padding: 3rem 0;
+  width: 80%;
+  margin: 0 auto;
 }
-.testimonial h2{
-    text-align: center;
-    color: #2C2C2C;
-    margin: 2rem;
+.testimonial h2 {
+  text-align: center;
+  color: #2c2c2c;
+  margin: 2rem;
 }
-.testimonial .container{
-    display: flex;
-    gap: 2rem;
+.testimonial .container {
+  display: flex;
+  gap: 2rem;
 }
-.testimonial .container .card{
-    padding: 3rem 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    box-shadow: 0px 3px 6px #0000001A;
-    font-size: 12px;
-    text-align: center;
-    color: #4E4E4E;
-    line-height: 18px;
+.testimonial .container .card {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0px 3px 6px #0000001a;
+  font-size: 12px;
+  text-align: center;
+  color: #4e4e4e;
+  line-height: 18px;
 }
-.testimonial .card img{
-    margin: 0 auto;
-    width: 50px;
+.testimonial .card img {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
-footer .contact{
-    background-color: #D4015D;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 2rem;
+footer .contact {
+  background-color: #d4015d;
+  text-align: center;
+  color: #ffffff;
+  padding: 2rem;
 }
-footer .contact button{
-    padding: 1rem 2rem;
-    width: fit-content;
-    background-color: #FFFFFF;
-    color: #D4015D;
-    cursor: pointer;
+footer .contact button {
+  padding: 1rem 2rem;
+  width: fit-content;
+  background-color: #ffffff;
+  color: #d4015d;
+  cursor: pointer;
 }
-footer .contact p{
-    margin: 1rem 0;
-    font-size: 12px;
+footer .contact p {
+  margin: 1rem 0;
+  font-size: 12px;
 }
-footer .footerLogo{
-    background-color: #292929;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
+footer .footerLogo {
+  background-color: #292929;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
 }
-footer .disclaimer{
-    text-align: center;
-    color: #A1A1A1;
-    background-color: #4B4B4B;
-    padding: 1rem;
+footer .footerLogo div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  gap: 20px;
+}
+footer .footerLogo div:nth-child(2) i {
+  cursor: pointer;
+  font-size: 20px;
+}
+footer .disclaimer {
+  text-align: center;
+  color: #a1a1a1;
+  background-color: #4b4b4b;
+  padding: 1rem;
 }
 @media (min-width: 750px) {
   #hamburger {
@@ -211,6 +237,7 @@ footer .disclaimer{
     color: #636974;
     align-items: center;
   }
+
   .navigation_menu span {
     border: 1px dotted #636974;
     padding: 5px 10px;
@@ -222,5 +249,26 @@ footer .disclaimer{
   }
   .logo {
     text-align: left;
+  }
+}
+@media (max-width: 750px) {
+  .hero .right {
+    display: none;
+  }
+  .hero .btn {
+    display: flex;
+    gap: 1rem;
+  }
+  .layer_two .container {
+    flex-direction: column;
+  }
+  .layer_three .container {
+    flex-direction: column;
+  }
+  .description_section .container .img img {
+    height: 200px;
+  }
+  .testimonial .container {
+    flex-direction: column;
   }
 }
