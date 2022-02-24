@@ -135,7 +135,7 @@ button {
   color: white;
   padding: 1rem;
   margin-right: 1rem;
-  background-color: #fe0a74;
+  background-color: #270212;
   cursor: pointer;
 }
 .layer_three {
@@ -163,6 +163,19 @@ button {
   margin-left: 2rem;
   margin-top: 2rem;
   z-index: 2;
+}
+.description_section .container i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #f73872;
+  font-size: 4rem;
+  z-index: 20;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.description_section .container i:hover {
+  color: #fbfbfb;
 }
 .testimonial {
   padding: 3rem 0;
@@ -277,7 +290,7 @@ footer .disclaimer {
     flex-direction: column;
   }
   .description_section .container .img img {
-    height: 200px;
+    height: 270px;
   }
   .testimonial .container {
     flex-direction: column;
