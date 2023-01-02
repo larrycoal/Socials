@@ -201,6 +201,9 @@ header {
 .description_section .container i:hover {
   color: #fbfbfb;
 }
+.description_section img{
+  object-fit: cover;
+}
 .testimonial {
   padding: 3rem 0;
   width: 80%;
